@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Productos.ProductosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--                   codigo caja 1            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgp1"
+                android:layout_width="349dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/hamburguesa1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburguesa doble queso" />
+
+                <TextView
+                    android:id="@+id/tv1p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incluye queso cheddar, queso mozarella, tocineta, carne de res y lechuga" />
+
+                <TextView
+                    android:id="@+id/tv2p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10.000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--                   codigo caja 2            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgp2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/hamburguesa2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburguesa con salmon" />
+
+                <TextView
+                    android:id="@+id/tv1p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incluye salmón, queso cheddar, tomate y cebolla" />
+
+                <TextView
+                    android:id="@+id/tv2p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15.000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--                   codigo caja 3            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgp3"
+                android:layout_width="142dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/hamburguesa3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburguesa doble carne" />
+
+                <TextView
+                    android:id="@+id/tv1p3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doble carne con pollo apanado" />
+
+                <TextView
+                    android:id="@+id/tv2p3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$9.000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--                   codigo caja 4            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgp4"
+                android:layout_width="248dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+               android:src="@drawable/hamburguesa4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburguesa con cheese tris" />
+
+                <TextView
+                    android:id="@+id/tv1p4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incluye cheese tris picantes, doble queso y carne" />
+
+                <TextView
+                    android:id="@+id/tv2p4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$15.000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--                   codigo caja 5            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgp5"
+                android:layout_width="352dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/pizza" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza napolitana" />
+
+                <TextView
+                    android:id="@+id/tv1p5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="salsa de tomate natural, queso mozzarella, albahaca fresca y aceite de oliva" />
+
+                <TextView
+                    android:id="@+id/tv2p5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$19.000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
