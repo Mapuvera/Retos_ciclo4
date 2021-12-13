@@ -7,14 +7,16 @@
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.378125" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.23055555555555557" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.23055555555555557" />
-        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/activity_form.xml" value="0.1" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/activity_form.xml" value="0.15611814345991562" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/activity_main.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/activity_splash.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/content_main.xml" value="0.28442028985507245" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/fragment_productos.xml" value="0.33" />
-        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/fragment_servicios.xml" value="0.338768115942029" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/fragment_servicios.xml" value="0.10109289617486339" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/fragment_sucursales.xml" value="0.338768115942029" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/grid_item.xml" value="0.25" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/layout/nav_header_main.xml" value="0.33" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/menu/activity_main_drawer.xml" value="0.2046875" />
         <entry key="..\:/Users/richa/AndroidStudioProjects/FoodIsGr/app/src/main/res/menu/main.xml" value="0.32685185185185184" />

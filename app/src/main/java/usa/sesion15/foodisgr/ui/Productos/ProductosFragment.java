@@ -1,6 +1,7 @@
 package usa.sesion15.foodisgr.ui.Productos;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,24 +22,42 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import java.util.ArrayList;
+
 import usa.sesion15.foodisgr.FormActivity;
 import usa.sesion15.foodisgr.R;
+import usa.sesion15.foodisgr.adaptadores.ProductoAdapter;
+import usa.sesion15.foodisgr.casos_uso.CasoUsoProducto;
 import usa.sesion15.foodisgr.databinding.FragmentProductosBinding;
+import usa.sesion15.foodisgr.datos.DBHelper;
+import usa.sesion15.foodisgr.modelos.Producto;
 
 public class ProductosFragment extends Fragment {
+    private String TABLE_NAME = "PRODUCTOS";
+    private GridView gridView;
+    private DBHelper dbHelper;
+    private ArrayList<Producto> productos;
+    private CasoUsoProducto casoUsoProducto;
 
-
-    private FragmentProductosBinding binding;
-    ImageView img1,img2,img3,img4,img5;
-    Drawable drawable1, drawable2, drawable3, drawable4,drawable5;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-        binding = FragmentProductosBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
+        View root = inflater.inflate(R.layout.fragment_productos,container,false);
+        try {
+            casoUsoProducto = new CasoUsoProducto();
+            dbHelper = new DBHelper(getContext());
+            Cursor cursor = dbHelper.getData(TABLE_NAME);
+            productos = casoUsoProducto.llenarListaProductos(cursor);
+            gridView = (GridView) root.findViewById(R.id.gridProductos);
+            ProductoAdapter productoAdapter = new ProductoAdapter(root.getContext(),productos);
+            gridView.setAdapter(productoAdapter);
+
+        }catch (Exception e){
+            Toast.makeText(getContext(), e.toString(), Toast.LENGTH_LONG).show();
+        }
 
         return root;
 
@@ -47,7 +67,7 @@ public class ProductosFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+
     }
 
     @Override
